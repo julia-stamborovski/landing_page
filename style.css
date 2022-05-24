@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Plus+Jakarta+Sans&display=swap');
+/* como usar as fontes:
+ CSS rules to specify families
+
+    font-family: 'DM Sans', sans-serif;
+
+    font-family: 'Plus Jakarta Sans', sans-serif;*/
+* {
+    margin: 40;
+    padding:40 ;
+    /* padding da tag para o conteudo*/
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size:110%;
+    background: #FBF7EC;
+
+}
+.cabecalho { /*flexbox*/
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-around;
+    padding:24px;
+}
+.cabecalho-imagem {
+    height: 60px;
+
+}
+/*  menu pode ser uma tag pai(tags ancoras**) display flex*/
+.cabecalho-menu{
+    display:flex;
+    /* gap ele coloca a distancia entre todos os elementos que estarão dentro da
+    tag pai*/
+    gap: 32px;
+}
+.cabecalho-menu-item{
+    /* colocar a fonte correta , cor , tamanho e peso*/
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #212625;
+}
+/* sobre o que podemos estilizar primeiro
+- pensar da esquerda-direita , do mais de fora-dentro, ou
+seja, o elemento pai para
+os elementos filhos */
+
+.conteudo{
+    border-top:  4px dotted #5A863E;
+
+}
+.conteudo-principal{
+    display:flex;
+    /* flex-direction -> linha ou coluna*/
+    flex-direction:colum;
+    align-items:center; /* ele centraliza as duas coisas ,  
+  controla o alinhamento dos itens em Cross Axis*/
+  justify-content:space-around; /* flexbox ajustou 
+  todo o posicionamento */
+}
+.conteudo-principal-escrito{
+  
+    display:flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+    left: 3%;
+
+}
+
+.conteudo-principal-escrito-titulo{
+    /* H1 */
+    height: 270px;
+    width: 470px;
+    left: 135px;
+    justify-content: space-around;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 62px;
+    line-height: 70px;
+    letter-spacing: 0.02em;
+    color: #004C3F;
+}
+.conteudo-principal-escrito-subtitulo{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #57605E;
+    top: 300px;
+    position: absolute;
+  }
+
+.conteudo-principal-escrito-botao1 {
+     background-color: #004C3F; /* diferente do color
+      o color diz fonte e o background do fundo */
+     position: absolute;
+     width: 192px;
+     height: 64px;
+     left: 8px;
+     top: 420px;
+     border: none;
+     border-radius: 30px;
+     width: 200px;
+     height: 200x;
+     font-family: 'DM Sans';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 24px;
+     letter-spacing: 0.04em;
+     text-transform: uppercase;
+     color: #FFDB95;
+  }
+  .conteudo-principal-escrito-botao2{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 34px;
+    gap: 10px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left:263px;
+    top: 416px;
+    border:none;
+    border-radius: 30px;
+    width: 200px;
+    height: 70px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #004C3F
+    }
+
+.conteudo-principal-escrito-botao1:hover{
+    background-color: #9DEDC6;
+}
+
+.conteudo-principal-escrito-botao2:hover{
+    background-color: #FFCB66;
+}
+.conteudo-principal-imagem{
+    height: 620px;
+    position: relative;
+    top: 45px;
+}
